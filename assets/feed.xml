@@ -26,7 +26,6 @@ permalink: /feed.xml
     {% assign author = site.data.author-data %}
     <author>
       <name>{{ author.name_en | xml_escape }}</name>
-      <email>{{ author.email | xml_escape }}</email>
       <url>{{ author.github_link | xml_escape }}</url>
     </author>
     
