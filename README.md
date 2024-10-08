@@ -1,1 +1,2 @@
-# whitecaffemocha.github.io
+# WhiteCaffeMocha
+My GitHub Pages repository
