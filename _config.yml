@@ -11,6 +11,7 @@ lang: ko
 og_type: website
 og_locale: ko_kr
 
+# Sitemap by jekyll-sitemap - asset/sitemap.xml
 # Google Analytics
 # google_analytics: 
 
