@@ -11,3 +11,6 @@ vendor
 
 # Goorm IDE
 goorm.manifest
+
+# rbenv
+.ruby-version
