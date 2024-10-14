@@ -1,6 +1,10 @@
-// Implement the dropdown menu
-function dropDownMenuOpen() {
+$(function() {
   
-  document.querySelector(".nav-collapse").classList.toggle("show");
+  // Dropdown menu
+  $("#dropDownMenuOpen").on("click", function() {
+    
+    $("#nav-collapse").toggleClass("show");
+  
+  });
 
-}
+});
