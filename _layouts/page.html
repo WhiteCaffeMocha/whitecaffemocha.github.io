@@ -6,6 +6,7 @@ layout: default
   <div class="container">
     
     {% if page.title != null and page.page_type contains "post" %}
+    <a id="previous_btn" role="button">- Previous</a>
     <p class="page-header">{{ page.title }}</p>
     {% endif %}
     

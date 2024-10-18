@@ -4,13 +4,20 @@ layout: page
 <ul class="post-card">
   
   {% assign post = page.title %}
+  {% if site.categories[post] != null %}
   {% for post in site.categories[post] %}
   <li class="post-link">
     
     <a href="{{ post.url | relative_url }}">{{ post.title }} {{ post.date | date_to_string }}</a>
     <p>{{ post.excerpt | strip_html | truncatewords: 10 }}...</p>
-  
+    
   </li>
   {% endfor %}
+  {% else %}
+  
+  <p>There is no content.</p>
+  
+  {% endif %}
+
 
 </ul>
