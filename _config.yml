@@ -13,7 +13,7 @@ og_locale: ko_kr
 
 # Sitemap by jekyll-sitemap - asset/sitemap.xml
 # Google Analytics
-# google_analytics: 
+google_analytics: G-8Y1W84B2CX
 
 # Jekyll plugins
 plugins:
