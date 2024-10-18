@@ -18,9 +18,11 @@
       
       <ul class="navbar">
         
-        {% for tabs in site.tabs %}{% if tabs.page_type contains "tab" %}
+        {% for tabs in site.tabs %}
+        {% if tabs.page_type contains "tab" %}
         <li><a class="navbar-link" href="{{ tabs.url | relative_url }}">{{ tabs.title }}</a></li>
-        {% endif %}{% endfor %}
+        {% endif %}
+        {% endfor %}
       
       </ul>
     

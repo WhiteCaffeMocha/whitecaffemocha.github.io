@@ -3,7 +3,8 @@ layout: page
 ---
 <ul class="home-card">
   
-  {% for post in paginator.posts %}{% if post.title != null %}
+  {% for post in paginator.posts %}
+  {% if post.title != null %}
   <li>
     
     <span>{{ post.category }} - </span>
@@ -11,7 +12,8 @@ layout: page
     <p>{{ post.excerpt | strip_html | truncatewords: 10 }}...</p>
   
   </li>
-  {% endif %}{% endfor %}
+  {% endif %}
+  {% endfor %}
 
 </ul>
 
@@ -21,16 +23,19 @@ layout: page
   
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path | relative_url }}">Prev</a>
-  {% else %}<span>Prev</span>
+  {% else %}
+  <span>Prev</span>
   {% endif %}
   
-  {% for page in (1..paginator.total_pages) %}{% if page == paginator.page %}
+  {% for page in (1..paginator.total_pages) %}
+  {% if page == paginator.page %}
   <span>{{ page }}</span>
   {% elsif page == 1 %}
   <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
   {% else %}
   <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-  {% endif %}{% endfor %}
+  {% endif %}
+  {% endfor %}
   
   {% if paginator.next_page %}
   <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
