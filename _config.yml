@@ -23,11 +23,11 @@ plugins:
 sass:
   style: compressed
 
-# Markdown config
+# Markdown, highlighter config
 markdown: kramdown
 kramdown:
-  syntax_highlighter: rouge
   input: GFM
+  syntax_highlighter: rouge
 
 # Page link
 permalink: /:title
